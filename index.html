@@ -6,22 +6,27 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4eQBzQPiZRrg-T2-ygRv_wNVLsrhCG18"></script>
     <title>API Testing</title>
   </head>
-  <body onload="initialize()">
+  <body>
       <div class="columns">
         <div class="column main-column">
-          
+
         </div>
-          <div class="column">
-          <!--Create a text box input for the user to enter the street address-->
-          Address: <input type="text" id="inputTextAddress" style=" width:200px" title="Address to Geocode"/>
-          <!--Create a button input for the user to click to geocode the address-->
-          <input type="button" onclick="codeAddress()" id="inputButtonGeocode" style="width:150px" title="Click to Geocode" value="Click to Geocode" />
-          <div id="map_canvas" style="width:400px; height:400px"></div>
+        <div class="column">
+          <div class="container">
+            <form id="userInputLocation">
+              <div class="form-group">
+                <label for="userInputLocation">Enter your location</label>
+                <br>
+                <input type="text" name="userInputLocation" id="userInputLocation">
+              </div>
+              <button type="submit" class="btn btn-info" id="submitLocation" >Click Me!</button>
+            </form>
+            <div id="map_canvas" style="width:400px; height:400px"></div>
           </div>
+        </div>
       </div>
   </body>
 </html>
