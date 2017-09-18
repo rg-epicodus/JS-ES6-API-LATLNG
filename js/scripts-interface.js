@@ -1,27 +1,19 @@
 import { scripts } from "./../js/scripts.js";
 
-
 $(document).ready(function() {
-  scripts.initialize();
 
+  function displayLatLng(latitude, longitude) {
+    $('#latitude').html(`<p>Latitude : ${latitude}`);
+    $('#longitude').html(`<p>Longitude : ${longitude}`);
 
+  };
 
-
-$('#userInputLocation').submit(function(evt) {
-  evt.preventDefault();
-  let location = $("input[name='userInputLocation']").val();
-  $("input").val("");
-
-  console.log("Location submitted " + location);
-  scripts.codeAddress(location);
-});
-
-
-
-
-
-
-
-
+  $('#userInputQuery').submit(function(e) {
+    e.preventDefault();
+    let query = $("input[name='userInputQuery']").val();
+    $("input").val("");
+    $('#displayQuery').html(`<p>Your input was : ${query}`);
+    scripts.findLatLng(query, displayLatLng);
+  })
 
 });
