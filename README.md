@@ -2,7 +2,7 @@
 This web application will do the following:
 
 * Use ES6
-* convert user input zipcode to lat lng to be used for other purposes
+* convert user input address info to lat lng to be used for other purposes, likely API calls
 
 
 
@@ -20,7 +20,7 @@ This web application will do the following:
 
 | Behavior      | Example Input         | Example Output        |
 | ------------- | ------------- | ------------- |
-|  |  |  |
+| User inputs address info | Portland, OR | 45.5231, -122.6765 |
 
 
 
