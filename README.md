@@ -10,10 +10,15 @@ This web application will do the following:
 
 * Clone the repo
 * navigate to  project root folder
+* head to https://developers.google.com/maps/documentation/javascript/get-api-key and get an API Key
+* must add a .env file to root directory with API key in it for google
+* add to .env file: exports.apiKey = "YOUR_GOOGLE_API_KEY";
 * run in terminal $ npm install
 * run in terminal $ bower install
 * run in terminal $ gulp build
 * Launch Index.html
+
+![Screenshot](./screenshot01.png)
 
 
 ## Specifications
